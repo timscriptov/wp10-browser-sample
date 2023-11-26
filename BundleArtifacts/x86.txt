@@ -1,0 +1,2 @@
+MainPackage=C:\Android\UWPProjects\Browser\bin\x86\Debug\Browser_1.0.1.0_x86_Debug.msix
+SymbolPackage=C:\Android\UWPProjects\Browser\obj\x86\Debug\Symbols\Browser_1.0.1.0_x86_Debug.appxsym

@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Browser.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <!-- Область отображения веб-страницы -->
+        <WebView x:ConnectionId='1' x:Name="webView" Margin="0" />
+
+        <!-- Панель с поисковой строкой и кнопкой -->
+        <Grid VerticalAlignment="Bottom" Background="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='2' Content="Home"                    HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Column="0" Foreground="White" />
+            <TextBox x:ConnectionId='3'                              x:Name="urlTextBox" PlaceholderText="Введите URL" HorizontalAlignment="Stretch" Grid.Column="1" />
+            <Button x:ConnectionId='4' Content="Menu"                    HorizontalAlignment="Right" Margin="0,0,10,0" Grid.Column="2" Foreground="White" />
+        </Grid>
+    </Grid>
+</Page>
+
